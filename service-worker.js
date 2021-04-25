@@ -42,7 +42,16 @@ self.addEventListener('activate', (evt) => {
     console.log('[ServiceWorker] Ativando...');
 
     evt.waitUntil(
-            self.clients.claim()
+        caches.keys().then((keylist) => {
+            return Promise.all(keylist.map((key) => {
+                //console.log('[ServiceWorker] Removendo cache antigo...');
+                if(key !== CACHE_NAME){
+                    return caches.delete(key);
+                }
+            }));
+        }).then(() => {
+            self.clients.claim();
+        })
     );
     
 });
