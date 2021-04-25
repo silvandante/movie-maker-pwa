@@ -55,7 +55,7 @@ self.addEventListener('activate', (evt) => {
         })
     );
     
-    evt.waitUntil(self.clients.claim());
+    self.clients.claim();
 });
 
 //Responder a versão offline do app
@@ -64,7 +64,6 @@ self.addEventListener('fetch', (evt) => {
     console.log('[ServiceWorker] Recebendo', evt.request.url);
 
     if (evt.request.mode !== 'navigate') {
-        console.log("evt.request.mode", evt.request.mode)
         return;
     }
     evt.respondWith(
