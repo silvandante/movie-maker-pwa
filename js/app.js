@@ -43,43 +43,42 @@ ajax.send();
 
 ajax.onreadystatechange = function(){
 
+
     if(ajax.readyState == 4 && ajax.status == 200){
+            var data = ajax.responseText;
 
-        var data = ajax.responseText;
+            var data_json = JSON.parse(data);
 
-        var data_json = JSON.parse(data);
+            var conteudo = document.getElementById('content_result');
 
-        var conteudo = document.getElementById('content_result');
+            if(data_json.length == 0){
 
-        if(data_json.length == 0){
+                conteudo.innerHTML = '<div class="row"><div class="col-12"><div class="alert alert-danger" role="alert">Nenhum produto cadastrado!</div></div></div>';
 
-            conteudo.innerHTML = '<div class="row"><div class="col-12"><div class="alert alert-danger" role="alert">Nenhum produto cadastrado!</div></div></div>';
+            }else{
 
-        }else{
+                var html_conteudo = "";
 
-            var html_conteudo = "";
+                html_conteudo+='<div class="container-fluid">';
 
-            html_conteudo+='<div class="container-fluid">';
-
-            if(data_json.movies.length == 0){
-                html_conteudo+= '<div class="row"><div class="col-12"><div class="alert alert-primary" role="alert">Nenhum filme cadastrado!</div></div></div>';
-            } else {
-                //Loop de filmes
-                html_conteudo+='<div class="row">';
-                for(var i=0; i < data_json.movies.length; i++){
-                    html_conteudo+= card_movie(data_json.movies[i], data_json.genres);
+                if(data_json.movies.length == 0){
+                    html_conteudo+= '<div class="row"><div class="col-12"><div class="alert alert-primary" role="alert">Nenhum filme cadastrado!</div></div></div>';
+                } else {
+                    //Loop de filmes
+                    html_conteudo+='<div class="row">';
+                    for(var i=0; i < data_json.movies.length; i++){
+                        html_conteudo+= card_movie(data_json.movies[i], data_json.genres);
+                    }
+                    html_conteudo+='</div>';
                 }
+
                 html_conteudo+='</div>';
+
+                //Gravar a criação dos elementos
+                conteudo.innerHTML = html_conteudo;
+                cache_cards(data_json);
             }
-
-            html_conteudo+='</div>';
-
-            //Gravar a criação dos elementos
-            conteudo.innerHTML = html_conteudo;
-            cache_cards(data_json);
-        }
-
-    }
+        } 
 
 }
 
@@ -88,6 +87,25 @@ function getReviewsForThisMovie(movieId) {
     var ajaxGetReview = new XMLHttpRequest();
 
     ajaxGetReview.open("GET", "https://api.themoviedb.org/3/movie/"+movieId+"/credits?api_key=4b7f32f602241c55fc0b38e3612322e6&language=pt-BR&page=1", true);
+
+    ajaxGetReview.timeout = 2000
+
+    ajaxGetReview.onerror = () => {
+        var conteudo = document.getElementById('modal_body_'+movieId);
+        var container = "<div class='row'>"
+        container+="Parece que você está sem internet. Tente novamente quando estiver com conexão."
+        container+="</div>"
+        conteudo.innerHTML = container;
+
+    }
+
+    ajaxGetReview.ontimeout = () => {
+        var conteudo = document.getElementById('modal_body_'+movieId);
+        var container = "<div class='row'>"
+        container+="Tempo esgotado. Sua internet parece estar lenta."
+        container+="</div>"
+        conteudo.innerHTML = container;
+    }
 
     ajaxGetReview.send();
 
@@ -118,6 +136,7 @@ function getReviewsForThisMovie(movieId) {
     }
 
 }
+
 
 var card_movie = (movie, genresJson) => {
     const { 
@@ -160,8 +179,7 @@ var card_movie = (movie, genresJson) => {
                             '<div>Carregando...</div>'+
                         '</div>'+
                         '<div class="modal-footer">'+
-                            '<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>'+
-                            '<button type="button" class="btn btn-primary">Save changes</button>'+
+                            '<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>'+
                         '</div>'+
                     '</div>'+
                 '</div>'+
