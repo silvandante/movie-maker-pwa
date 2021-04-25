@@ -60,31 +60,6 @@ self.addEventListener('activate', (evt) => {
 //Responder a versão offline do app
 self.addEventListener('fetch', (event) => {
 
-    event.respondWith((async() => {
-
-        const cache = await caches.open(CACHE_NAME);
-    
-        try {
-            const cachedResponse = await cache.match(event.request);
-            if(cachedResponse) {
-                console.log('cachedResponse: ', event.request.url);
-                return cachedResponse;
-            }
-    
-            const fetchResponse = await fetch(event.request);
-            if(fetchResponse) {
-                console.log('fetchResponse: ', event.request.url);
-                await cache.put(event.request, fetchResponse.clone());
-                return fetchResponse;
-            }
-        }   catch (error) {
-            console.log('Fetch failed: ', error);
-            const cachedResponse = await cache.match('/offline.html');
-            return cachedResponse;
-        }
-      })());
-
-    /*
     console.log('[ServiceWorker-Offline-Decisor] Recebendo', evt.request.url);
 
     if (evt.request.mode !== 'navigate') {
@@ -100,6 +75,5 @@ self.addEventListener('fetch', (event) => {
                     });
             })
     );
-    */
 
 });
