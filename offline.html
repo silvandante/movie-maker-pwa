@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#ff2945" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="manifest" href="manifest.json">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/icons/152.png">
+
+    <title>Movie Taker</title>
+  </head>
+  <body>
+
+
+    <header class="container-fluid bg-header">
+        <div class="row">
+
+            <div class="col-12">
+
+                <img src="images/logo.png" class="logo">
+
+            </div>
+
+        </div>
+    </header>
+
+   
+    <main class="container content2">
+        <div class="row"><h2 class="titulo-categoria">Don't know what to watch? Check this!</h2></div>
+        <div id="content_result">
+
+
+        </div>
+    </main>
+
+    <footer class="container-fluid bg-footer fixed-bottom">
+        <div class="row">
+
+            <div class="col-12">
+                Versão offline do cardápio
+            </div>
+
+        </div>
+    </footer>    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script>
+
+      $(document).ready(function(){ 
+        //Carregar produtos do cache
+        var ajax = new XMLHttpRequest();
+
+        ajax.open("GET", "data.json", true);
+
+        ajax.send();
+
+        ajax.onreadystatechange = function(){
+
+            if(ajax.readyState == 4 && ajax.status == 200){
+
+                var data = ajax.responseText;
+
+                var data_json = JSON.parse(data);
+
+                var conteudo = document.getElementById('content_result');
+
+                if(data_json.movies.length == 0){
+
+                    conteudo.innerHTML = '<div class="row"><div class="col-12"><div class="alert alert-danger" role="alert">Nenhum filme cadastrado!</div></div></div>';
+
+                }else{
+
+                    var html_conteudo = "";
+
+                    html_conteudo+='<div class="row">';
+                    for (var i=0; i < data_json.movies.length-1; i++) {
+                      html_conteudo+= card_movie(data_json.movies[i], data_json.genres);  
+                    }
+                    html_conteudo+='</div>';
+
+                    //Gravar a criação dos elementos
+                    conteudo.innerHTML = html_conteudo;
+                }
+
+            }
+
+        }
+    });
+    //Template do Card de Produto
+    
+var card_movie = (movie, genresJson) => {
+    const { 
+        genre_ids, id, 
+        original_language, original_title, 
+        overview, release_date, 
+        poster_path, title, 
+        vote_average, vote_count } = movie
+
+    var genres = ""
+
+    genre_ids.forEach(movieGenre => {
+        const foundGenre = genresJson.find(genre => genre.id == movieGenre)
+
+        if(foundGenre!=-1)
+            genres+='<span class="badge badge-secondary" style="margin-right: 5px;">'+foundGenre.name+"</span>"
+
+    })
+
+    return '<div class="col-lg-4 col-md-6 col-sm-12" style="margin-top:10px;">'+
+        '<div class="card shadow bg-white rounded h-100">'+
+            '<img src="'+poster_path+'" class="card-img-top" alt="...">'+
+            '<div class="card-body">'+
+                '<div style="display: flex; flex-direction: row;"><i class="fas fa-star" style="margin-top: 3px;"></i><p><strong>'+vote_average+'</strong> ('+vote_count+' votos)</p></div>'+
+                '<h4>'+title+'</h4>'+
+                '<i>'+original_title+'</i><br/>'+
+                genres+
+            '<p class="card-text">'+overview+'</p>'+
+            '<button type="button" class="btn btn-primary" data-toggle="modal" disabled>Fique online para conferir o elenco</button>'+
+            '</div>'+
+        '</div>'+
+    '</div>';
+
+}
+    </script>
+  </body>
+</html>

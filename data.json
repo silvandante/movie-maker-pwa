@@ -1,0 +1,487 @@
+{
+    "movies": [
+        {
+            "adult": false,
+            "backdrop_path": "/inJjDhCjfhh3RtrJWBmmDqeuSYC.jpg",
+            "genre_ids": [
+                28,
+                878
+            ],
+            "id": 399566,
+            "original_language": "en",
+            "original_title": "Godzilla vs. Kong",
+            "overview": "Em uma época em que os monstros andam na Terra, a luta da humanidade por seu futuro coloca Godzilla e Kong em rota de colisão que verá as duas forças mais poderosas da natureza no planeta se confrontarem em uma batalha espetacular para as idades. Enquanto Monarch embarca em uma missão perigosa em terreno desconhecido e descobre pistas sobre as origens dos Titãs, uma conspiração humana ameaça tirar as criaturas, boas e más, da face da terra para sempre.",
+            "popularity": 4459.297,
+            "poster_path": "https://image.tmdb.org/t/p/w500/klAIFewuqcyEmH1SMtR2XbMyqzM.jpg",
+            "release_date": "2021-03-24",
+            "title": "Godzilla vs. Kong",
+            "video": false,
+            "vote_average": 8.3,
+            "vote_count": 4838
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/9yBVqNruk6Ykrwc32qrK2TIE5xw.jpg",
+            "genre_ids": [
+                14,
+                28,
+                12,
+                878,
+                53
+            ],
+            "id": 460465,
+            "original_language": "en",
+            "original_title": "Mortal Kombat",
+            "overview": "Nova aventura baseada no videogame Mortal Kombat. Na história, um jovem que nunca treinou artes marciais acaba envolvido em um gigantesco torneio de luta envolvendo guerreiros da Terra e lutadores e outras dimensões.",
+            "popularity": 3500.808,
+            "poster_path": "https://image.tmdb.org/t/p/w500/w8BVC3qrCWCiTHRz4Rft12dtQF0.jpg",
+            "release_date": "2021-04-07",
+            "title": "Mortal Kombat",
+            "video": false,
+            "vote_average": 8.2,
+            "vote_count": 546
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/z7HLq35df6ZpRxdMAE0qE3Ge4SJ.jpg",
+            "genre_ids": [
+                28,
+                12,
+                35,
+                14
+            ],
+            "id": 615678,
+            "original_language": "en",
+            "original_title": "Thunder Force",
+            "overview": "Em um mundo cheio de supervilões, duas melhores amigas de infância se reaproximam quando uma delas inventa um tratamento capaz de dar poderes para que protejam a cidade.",
+            "popularity": 2556.106,
+            "poster_path": "https://image.tmdb.org/t/p/w500/Aej7rR73kpAKce6XXBLeqijAwPD.jpg",
+            "release_date": "2021-04-09",
+            "title": "Esquadrão Trovão",
+            "video": false,
+            "vote_average": 5.8,
+            "vote_count": 402
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/pcDc2WJAYGJTTvRSEIpRZwM3Ola.jpg",
+            "genre_ids": [
+                28,
+                12,
+                14,
+                878
+            ],
+            "id": 791373,
+            "original_language": "en",
+            "original_title": "Zack Snyder's Justice League",
+            "overview": "Determinado a garantir que o sacrifício final do Superman não foi em vão, Bruce Wayne alinha forças com Diana Prince com planos de recrutar uma equipe de metahumanos para proteger o mundo de uma ameaça de proporções catastróficas que se aproxima.",
+            "popularity": 2375.449,
+            "poster_path": "https://image.tmdb.org/t/p/w500/ArWn6gCi61b3b3hclD2L0LOk66k.jpg",
+            "release_date": "2021-03-18",
+            "title": "Liga da Justiça de Zack Snyder",
+            "video": false,
+            "vote_average": 8.5,
+            "vote_count": 5091
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/5Zv5KmgZzdIvXz2KC3n0MyecSNL.jpg",
+            "genre_ids": [
+                28,
+                53,
+                80
+            ],
+            "id": 634528,
+            "original_language": "en",
+            "original_title": "The Marksman",
+            "overview": "Um fazendeiro na fronteira do Arizona se torna o improvável defensor de um jovem mexicano que foge desesperadamente dos assassinos do cartel que o perseguiram até os EUA.",
+            "popularity": 2163.717,
+            "poster_path": "https://image.tmdb.org/t/p/w500/wAJniojhHa4oVKa9AxdNwvpmS74.jpg",
+            "release_date": "2021-01-15",
+            "title": "Na Mira do Perigo",
+            "video": false,
+            "vote_average": 7.1,
+            "vote_count": 147
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/6zbKgwgaaCyyBXE4Sun4oWQfQmi.jpg",
+            "genre_ids": [
+                28,
+                53,
+                80
+            ],
+            "id": 615457,
+            "original_language": "en",
+            "original_title": "Nobody",
+            "overview": "Quando dois ladrões invadem sua casa no subúrbio uma noite, Hutch se recusa a defender a si mesmo ou a sua família, na esperança de evitar violência grave. Seu filho adolescente, Blake, está desapontado com ele e sua esposa, Becca, parece se afastar ainda mais.  Em consequência, o incidente acerta a raiva latente de Hutch, desencadeando instintos adormecidos e impulsionando-o em um caminho brutal que revelará segredos obscuros e habilidades letais para salvar sua família.",
+            "popularity": 1931.287,
+            "poster_path": "https://image.tmdb.org/t/p/w500/woPYFGKwVULILbO7q44HmsNY0kO.jpg",
+            "release_date": "2021-03-18",
+            "title": "Anônimo",
+            "video": false,
+            "vote_average": 8.5,
+            "vote_count": 686
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/ovggmAOu1IbPGTQE8lg4lBasNC7.jpg",
+            "genre_ids": [
+                878,
+                28,
+                12,
+                53
+            ],
+            "id": 412656,
+            "original_language": "en",
+            "original_title": "Chaos Walking",
+            "overview": "Em um futuro não muito distante, em um mundo onde as mulheres desapareceram e os homens foram afetados pelo “ruído” – uma força que deixa seus pensamentos audíveis – Todd Hewitt encontra Viola, uma jovem misteriosa que aterrissou em seu planeta. Com Viola correndo perigo, Todd jura protegê-la e colocá-la fora de perigo. Para salvá-la, Todd terá que controlar seu “ruído”, descobrir sua própria força e desvendar todos os segredos sombrios que seu planeta e sua comunidade guardam.",
+            "popularity": 1656.474,
+            "poster_path": "https://image.tmdb.org/t/p/w500/7poSpsfrnhxjVN2uRmemd76ASvS.jpg",
+            "release_date": "2021-02-24",
+            "title": "Mundo em Caos",
+            "video": false,
+            "vote_average": 7.4,
+            "vote_count": 435
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/zDq2pwPyt4xwSFHKUoNN2LohDWj.jpg",
+            "genre_ids": [
+                27
+            ],
+            "id": 632357,
+            "original_language": "en",
+            "original_title": "The Unholy",
+            "overview": "Conheça Alice, uma jovem com deficiência auditiva que, após uma suposta visita da Virgem Maria, é inexplicavelmente capaz de ouvir, falar e curar os enfermos. À medida que a notícia se espalha e pessoas de perto e de longe se reúnem para testemunhar seus milagres, um jornalista decadente (Jeffrey Dean Morgan), que espera reviver sua carreira, visita a pequena cidade da Nova Inglaterra para investigar o fenômeno. Quando eventos terríveis começam a acontecer por toda parte, ele começa a questionar se esses fenômenos são obras da Virgem Maria ou algo muito mais sinistro.",
+            "popularity": 1619.628,
+            "poster_path": "https://image.tmdb.org/t/p/w500/znrtj0lFOgEa8bbAbck1QsvvQ6h.jpg",
+            "release_date": "2021-03-31",
+            "title": "Rogai Por Nós",
+            "video": false,
+            "vote_average": 5.5,
+            "vote_count": 43
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/7prYzufdIOy1KCTZKVWpjBFqqNr.jpg",
+            "genre_ids": [
+                16,
+                12,
+                14,
+                10751,
+                28
+            ],
+            "id": 527774,
+            "original_language": "en",
+            "original_title": "Raya and the Last Dragon",
+            "overview": "O reino encantado Kumandra é dividido em cinco regiões e sua população venerava os dragões mágicos que eram presentes no reino, porém quando uma força maligna ameaçou a Terra, os dragões se sacrificaram para salvar a humanidade. Agora, 500 anos depois, o mesmo mal voltou e cabe a uma guerreira solitária, Raya, rastrear o lendário último dragão para restaurar a terra fraturada e seu povo dividido.",
+            "popularity": 1432.344,
+            "poster_path": "https://image.tmdb.org/t/p/w500/yXrb84zJidCefyhTWHwo4yCDvwz.jpg",
+            "release_date": "2021-03-03",
+            "title": "Raya e o Último Dragão",
+            "video": false,
+            "vote_average": 8.3,
+            "vote_count": 2393
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/9xeEGUZjgiKlI69jwIOi0hjKUIk.jpg",
+            "genre_ids": [
+                16,
+                28,
+                14
+            ],
+            "id": 664767,
+            "original_language": "en",
+            "original_title": "Mortal Kombat Legends: Scorpion's Revenge",
+            "overview": "Após o massacre cruel de sua família pelo mercenário Sub-Zero, Hanzo Hasashi é exilado no tortuoso Netherrealm, lá, em troca de sua servidão ao sinistro Quan Chi, ele tem a chance de vingar sua família - e ressuscita como Scorpion, uma alma perdida e vingativa. De volta ao Earthrealm, Lord Raiden reúne uma equipe de guerreiros de elite - o monge Shaolin Liu Kang, a oficial das Forças Especiais Sonya Blade e o ator de ação Johnny Cage - um grupo improvável de heróis com uma chance de salvar a humanidade. Para fazer isso, eles devem derrotar a horda de gladiadores do Outworld de Shang Tsung e vencer o torneio Mortal Kombat.",
+            "popularity": 1221.542,
+            "poster_path": "https://image.tmdb.org/t/p/w500/zO5913BWcWYrhgACNpaaw9CCycX.jpg",
+            "release_date": "2020-04-12",
+            "title": "Mortal Kombat Legends: A Vingança de Scorpion",
+            "video": false,
+            "vote_average": 8.4,
+            "vote_count": 861
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/z8TvnEVRenMSTemxYZwLGqFofgF.jpg",
+            "genre_ids": [
+                14,
+                28,
+                12
+            ],
+            "id": 458576,
+            "original_language": "en",
+            "original_title": "Monster Hunter",
+            "overview": "Baseado no jogo da Capcom chamado Monster Hunter, a tenente Artemis e seus soldados são transportados para um novo mundo. Lá, eles se envolvem em batalhas imponentes, buscando desesperadamente a sobrevivência contra bestas gigantes portadoras de habilidades surreais.",
+            "popularity": 1023.771,
+            "poster_path": "https://image.tmdb.org/t/p/w500/2QhhILPAv7MKFd1q57ssQeEV2su.jpg",
+            "release_date": "2020-12-03",
+            "title": "Monster Hunter",
+            "video": false,
+            "vote_average": 7.1,
+            "vote_count": 1504
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/fev8UFNFFYsD5q7AcYS8LyTzqwl.jpg",
+            "genre_ids": [
+                35,
+                10751,
+                16
+            ],
+            "id": 587807,
+            "original_language": "en",
+            "original_title": "Tom & Jerry",
+            "overview": "Um gato de rua chamado Tom é contratado por uma garota chamada Kayla, uma jovem empregada que trabalha em um hotel glamouroso em Nova York, para se livrar de Jerry, um rato travesso que se mudou para o hotel, antes que ele seja a ruína de um importante casamento.",
+            "popularity": 933.316,
+            "poster_path": "https://image.tmdb.org/t/p/w500/6KErczPBROQty7QoIsaa6wJYXZi.jpg",
+            "release_date": "2021-02-11",
+            "title": "Tom & Jerry - O Filme",
+            "video": false,
+            "vote_average": 7.3,
+            "vote_count": 1229
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/gzJnMEMkHowkUndn9gCr8ghQPzN.jpg",
+            "genre_ids": [
+                53,
+                28,
+                18
+            ],
+            "id": 793723,
+            "original_language": "fr",
+            "original_title": "Sentinelle",
+            "overview": "Transferida para casa depois de uma missão traumatizante, uma soldado francesa usa suas habilidades letais para caçar o homem que feriu sua irmã.",
+            "popularity": 932.88,
+            "poster_path": "https://image.tmdb.org/t/p/w500/56Z9eh4k9pzR6Yhy201nq2Qoa0n.jpg",
+            "release_date": "2021-03-05",
+            "title": "A Sentinela",
+            "video": false,
+            "vote_average": 6,
+            "vote_count": 342
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/d1sVANghKKMZNvqjW0V6y1ejvV9.jpg",
+            "genre_ids": [
+                16,
+                28,
+                12,
+                14,
+                18
+            ],
+            "id": 635302,
+            "original_language": "ja",
+            "original_title": "劇場版「鬼滅の刃」無限列車編",
+            "overview": "Tanjiro Kamado, junto com Inosuke Hashibira, um garoto criado por javalis que usa uma cabeça de javali, e Zenitsu Agatsuma, um garoto assustado que revela seu verdadeiro poder quando dorme, embarca no Trem Infinito em uma nova missão com o Hashira de Fogo, Kyojuro Rengoku, para derrotar um demônio que tem atormentado o povo e matado os caçadores de oni que se opõem a ele!",
+            "popularity": 918.016,
+            "poster_path": "https://image.tmdb.org/t/p/w500/m9cn5mhW519QKr1YGpGxNWi98VJ.jpg",
+            "release_date": "2020-10-16",
+            "title": "Demon Slayer: O Trem Infinito",
+            "video": false,
+            "vote_average": 8.1,
+            "vote_count": 590
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/srYya1ZlI97Au4jUYAktDe3avyA.jpg",
+            "genre_ids": [
+                14,
+                28,
+                12
+            ],
+            "id": 464052,
+            "original_language": "en",
+            "original_title": "Wonder Woman 1984",
+            "overview": "Em 1984, Diana Prince entra em conflito com dois inimigos formidáveis, Maxwell Lord e a Mulher-Leopardo, enquanto reencontra misteriosamente com seu antigo interesse amoroso Steve Trevor.",
+            "popularity": 885.71,
+            "poster_path": "https://image.tmdb.org/t/p/w500/qDA95ebiy3W3m8hTRB3xZNZVVBM.jpg",
+            "release_date": "2020-12-16",
+            "title": "Mulher-Maravilha 1984",
+            "video": false,
+            "vote_average": 6.8,
+            "vote_count": 4927
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/uQtqiAu2bBlokqjlURVLEha6zoi.jpg",
+            "genre_ids": [
+                80,
+                18
+            ],
+            "id": 544401,
+            "original_language": "en",
+            "original_title": "Cherry",
+            "overview": "Cherry deixa a faculdade para se tornar médico no Iraque, apoiado por sua amada, Emily. Ao voltar da guerra com estresse pós-traumático, se envolve com crime e drogas enquanto luta para reconquistar seu lugar no mundo.",
+            "popularity": 881.48,
+            "poster_path": "https://image.tmdb.org/t/p/w500/qbSsR0IfnxdXZqfRMpH2PgLAbPV.jpg",
+            "release_date": "2021-02-26",
+            "title": "Cherry: Inocência Perdida",
+            "video": false,
+            "vote_average": 7.6,
+            "vote_count": 527
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/dEh93Ni98JWh7fmhD56ZlOFQmoT.jpg",
+            "genre_ids": [
+                80,
+                18,
+                53
+            ],
+            "id": 606523,
+            "original_language": "ko",
+            "original_title": "낙원의 밤",
+            "overview": "Escondido em uma ilha após uma tragédia, um gângster injustiçado se envolve com uma mulher que tem seus próprios demônios.",
+            "popularity": 865.362,
+            "poster_path": "https://image.tmdb.org/t/p/w500/hIv5gxbSnNt9VfXy58APhUukp6E.jpg",
+            "release_date": "2020-09-03",
+            "title": "Noite no Paraíso",
+            "video": false,
+            "vote_average": 7.2,
+            "vote_count": 72
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/lOSdUkGQmbAl5JQ3QoHqBZUbZhC.jpg",
+            "genre_ids": [
+                53,
+                28,
+                878
+            ],
+            "id": 775996,
+            "original_language": "en",
+            "original_title": "Outside the Wire",
+            "overview": "Em um futuro próximo, um piloto de drone e um androide ultrassecreto trabalham lado a lado no campo de batalha para evitar um ataque nuclear.",
+            "popularity": 826.991,
+            "poster_path": "https://image.tmdb.org/t/p/w500/vnVQx7MJMwTvqcn5pkYDImxzlMg.jpg",
+            "release_date": "2021-01-15",
+            "title": "Zona de Combate",
+            "video": false,
+            "vote_average": 6.5,
+            "vote_count": 1008
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/drulhSX7P5TQlEMQZ3JoXKSDEfz.jpg",
+            "genre_ids": [
+                18,
+                14,
+                878
+            ],
+            "id": 581389,
+            "original_language": "ko",
+            "original_title": "승리호",
+            "overview": "Perseguindo detritos espaciais e sonhos distantes no ano de 2092, quatro desajustados descobrem segredos explosivos durante a tentativa de comércio de um humanoide.‎",
+            "popularity": 791.095,
+            "poster_path": "https://image.tmdb.org/t/p/w500/f32ne52ClTPFL9Ew2aPUhKoVn9e.jpg",
+            "release_date": "2021-02-05",
+            "title": "Nova Ordem Espacial",
+            "video": false,
+            "vote_average": 7.2,
+            "vote_count": 503
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/jnq4fV53Px9HvUZD2bQIxtGSwS7.jpg",
+            "genre_ids": [
+                80,
+                18,
+                28
+            ],
+            "id": 644083,
+            "original_language": "en",
+            "original_title": "Twist",
+            "overview": "O ladrãozinho favorito de Londres já é um adolescente nesta versão moderna do clássico Oliver Twist de Charles Dickens. Depois de um encontro com a lei, o ágil “Twist” foge para Londres, onde conhece uma gangue de jovens que, sob a tutela de Fagin (Caine), usam suas habilidades de Parkour para realizar o roubo do século.",
+            "popularity": 789.433,
+            "poster_path": "https://image.tmdb.org/t/p/w500/29dCusd9PwHrbDqzxNG35WcpZpS.jpg",
+            "release_date": "2021-01-22",
+            "title": "Twist",
+            "video": false,
+            "vote_average": 7.1,
+            "vote_count": 43
+        }
+    ],
+    "genres": [
+            {
+                "id": 28,
+                "name": "Ação"
+            },
+            {
+                "id": 12,
+                "name": "Aventura"
+            },
+            {
+                "id": 16,
+                "name": "Animação"
+            },
+            {
+                "id": 35,
+                "name": "Comédia"
+            },
+            {
+                "id": 80,
+                "name": "Crime"
+            },
+            {
+                "id": 99,
+                "name": "Documentário"
+            },
+            {
+                "id": 18,
+                "name": "Drama"
+            },
+            {
+                "id": 10751,
+                "name": "Família"
+            },
+            {
+                "id": 14,
+                "name": "Fantasia"
+            },
+            {
+                "id": 36,
+                "name": "História"
+            },
+            {
+                "id": 27,
+                "name": "Terror"
+            },
+            {
+                "id": 10402,
+                "name": "Música"
+            },
+            {
+                "id": 9648,
+                "name": "Mistério"
+            },
+            {
+                "id": 10749,
+                "name": "Romance"
+            },
+            {
+                "id": 878,
+                "name": "Ficção científica"
+            },
+            {
+                "id": 10770,
+                "name": "Cinema TV"
+            },
+            {
+                "id": 53,
+                "name": "Thriller"
+            },
+            {
+                "id": 10752,
+                "name": "Guerra"
+            },
+            {
+                "id": 37,
+                "name": "Faroeste"
+            }
+        ]
+}
