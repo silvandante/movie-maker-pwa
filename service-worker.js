@@ -58,7 +58,7 @@ self.addEventListener('activate', (evt) => {
 });
 
 //Responder a versão offline do app
-self.addEventListener('fetch', (event) => {
+self.addEventListener('fetch', (evt) => {
 
     console.log('[ServiceWorker] Recebendo', evt.request.url);
 
