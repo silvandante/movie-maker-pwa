@@ -54,7 +54,8 @@ self.addEventListener('activate', (evt) => {
             }));
         })
     );
-    self.clients.claim();
+    
+    evt.waitUntil(self.clients.claim());
 });
 
 //Responder a versão offline do app
