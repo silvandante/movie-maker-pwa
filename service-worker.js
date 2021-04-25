@@ -52,10 +52,11 @@ self.addEventListener('activate', (evt) => {
                     return caches.delete(key);
                 }
             }));
+        }).then(() => {
+            self.clients.claim();
         })
     );
     
-    self.clients.claim();
 });
 
 //Responder a versão offline do app
