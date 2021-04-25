@@ -75,3 +75,11 @@ self.addEventListener('fetch', (evt) => {
     );
 
 });
+
+self.addEventListener('DOMContentLoaded', function() {
+    var status = document.getElementById("status");
+  
+    if(!navigator.onLine){
+        location.reload()
+    }
+});
