@@ -43,27 +43,6 @@
         },
         {
             "adult": false,
-            "backdrop_path": "/z7HLq35df6ZpRxdMAE0qE3Ge4SJ.jpg",
-            "genre_ids": [
-                28,
-                12,
-                35,
-                14
-            ],
-            "id": 615678,
-            "original_language": "en",
-            "original_title": "Thunder Force",
-            "overview": "Em um mundo cheio de supervilões, duas melhores amigas de infância se reaproximam quando uma delas inventa um tratamento capaz de dar poderes para que protejam a cidade.",
-            "popularity": 2556.106,
-            "poster_path": "https://image.tmdb.org/t/p/w500/Aej7rR73kpAKce6XXBLeqijAwPD.jpg",
-            "release_date": "2021-04-09",
-            "title": "Esquadrão Trovão",
-            "video": false,
-            "vote_average": 5.8,
-            "vote_count": 402
-        },
-        {
-            "adult": false,
             "backdrop_path": "/pcDc2WJAYGJTTvRSEIpRZwM3Ola.jpg",
             "genre_ids": [
                 28,
