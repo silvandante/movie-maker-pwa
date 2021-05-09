@@ -1,3 +1,8 @@
+.body-style {
+    display: flex;
+    flex-direction: column;
+}
+
 .bg-header{
     padding: 8px;
     text-align: center;
