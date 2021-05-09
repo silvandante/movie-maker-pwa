@@ -15,7 +15,7 @@ const FILES_TO_CACHE = [
     'js/jquery-3.5.1.min.js',
     'js/popper.min.js',
     'js/popper.min.js.map',
-    'offline.html',
+    'offline.html'
 
 ];
 
@@ -36,29 +36,8 @@ self.addEventListener('install', (evt) => {
     self.skipWaiting();
 });
 
-//Gera o CACHE dos arquivos estáticos
-self.addEventListener('activate', (evt) => {
-
-    console.log('[ServiceWorker] Ativando...');
-
-    evt.waitUntil(
-
-        caches.keys().then((keylist) => {
-
-            return Promise.all(keylist.map((key) => {
-
-                //console.log('[ServiceWorker] Removendo cache antigo...');
-                if(key !== CACHE_NAME){
-                    return caches.delete(key);
-                }
-            }));
-        })
-    );
-    self.clients.claim();
-});
-
 //Responder a versão offline do app
-self.addEventListener('fetch', (event) => {
+self.addEventListener('fetch', (evt) => {
 
     console.log('[ServiceWorker-Offline-Decisor] Recebendo', evt.request.url);
 
@@ -77,3 +56,20 @@ self.addEventListener('fetch', (event) => {
     );
 
 });
+
+
+self.addEventListener('activate', function(event) {
+    event.waitUntil(
+      caches.keys().then(function(cacheNames) {
+        return Promise.all(
+          cacheNames.filter(function(cacheName) {
+            return true
+          }).map(function(cacheName) {
+            if(cacheName !== CACHE_NAME){
+                return caches.delete(cacheName);
+            }
+          })
+        );
+      })
+    );
+  });

@@ -1,6 +1,6 @@
 {
-    "name": "Movie Taker",
-    "short_name": "Movie Taker",
+    "name": "Movie Maker",
+    "short_name": "Movie Maker",
     "icons": [
       {
         "src": "images/icons/manifest-icon-192.png",

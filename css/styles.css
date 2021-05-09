@@ -1,3 +1,8 @@
+.body-style {
+    display: flex;
+    flex-direction: column;
+}
+
 .bg-header{
     padding: 8px;
     text-align: center;
@@ -78,3 +83,5 @@
 #content_result .row .col-6{
     margin-bottom: 15px;
 }
+
+html{overflow-x: hidden;}
